@@ -1,0 +1,261 @@
+%==============================================================
+% CV Jorge Armando Cordero García
+% VERSIÓN 2: Ingeniero de Infraestructura IT / Redes / Sistemas
+% Optimizado para ATS | MiKTeX | VS Code
+% Compilar con: pdflatex CV_Jorge_Cordero_Infraestructura.tex
+%==============================================================
+
+\documentclass[10pt, letterpaper]{article}
+
+%------ PAQUETES ------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage[left=1.8cm, right=1.8cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage{lmodern}
+% \usepackage{microtype}
+\usepackage{parskip}
+\usepackage{enumitem}
+% \usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{amssymb}
+% \usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{tabularx}
+% \\usepackage{colortbl}
+\usepackage{tikz}
+
+%------ COLORES ------
+\definecolor{primary}{HTML}{0D3349}
+\definecolor{accent}{HTML}{1B6CA8}
+\definecolor{accentlight}{HTML}{E8F4FD}
+\definecolor{lightgray}{HTML}{F7F7F7}
+\definecolor{darkgray}{HTML}{333333}
+\definecolor{medgray}{HTML}{555555}
+\definecolor{rulecol}{HTML}{1B6CA8}
+\definecolor{tagbg}{HTML}{E3EFF8}
+
+%------ HYPERLINKS ------
+\hypersetup{
+    colorlinks=true,
+    urlcolor=accent,
+    linkcolor=primary,
+    pdfauthor={Jorge Armando Cordero García},
+    pdftitle={CV - Ingeniero de Infraestructura IT},
+    pdfsubject={Curriculum Vitae}
+}
+
+%------ FORMATO DE SECCIONES ------
+% Formato de sección simplificado para el entorno actual
+% Se usa el estilo por defecto de sección
+
+%------ COMANDOS PERSONALIZADOS ------
+\newcommand{\cvheader}[6]{%
+  \noindent
+  \begin{minipage}[t]{0.62\linewidth}
+    {\LARGE\bfseries\color{primary} #1}\\[4pt]
+    {\large\color{accent}\bfseries #2}
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[t]{0.36\linewidth}
+    \raggedleft
+    {\small\color{darkgray}
+      Ubicaci\u00f3n: #3\\[2pt]
+      Tel: #4\\[2pt]
+      Email: \href{mailto:#5}{#5}\\[2pt]
+      LinkedIn: \href{https://linkedin.com/in/jacoga}{linkedin.com/in/jacoga}
+    }
+  \end{minipage}
+  \vspace{4pt}
+  \textcolor{rulecol}{\rule{\linewidth}{2pt}}
+  \vspace{2pt}
+}
+
+\newcommand{\cventry}[5]{%
+  \noindent
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    {\bfseries\color{primary} #1} & \cellcolor{accentlight}{\small\color{accent}\bfseries #2} \\
+    {\small\color{accent} #3} \textcolor{medgray}{$|$} {\small\color{darkgray}\itshape #4} & \\
+  \end{tabularx}
+  \vspace{2pt}
+  #5
+  \vspace{6pt}
+}
+
+\newcommand{\keyword}[1]{\textbf{#1}}
+
+\setlist[itemize]{
+  leftmargin=14pt,
+  itemsep=1.5pt,
+  parsep=0pt,
+  topsep=2pt,
+  label=\textcolor{accent}{$\circ$}
+}
+
+\newcommand{\tag}[1]{%
+  \tikz[baseline=(t.base)]\node[fill=tagbg, rounded corners=2pt, inner sep=3pt, text=accent](t){\footnotesize\bfseries #1};%
+}
+
+\pagestyle{empty}
+
+%==============================================================
+\begin{document}
+%==============================================================
+
+% ENCABEZADO
+\cvheader
+  {Jorge Armando Cordero García}
+  {Ingeniero de Sistemas | Infraestructura IT \& Redes}
+  {Gamarra, Cesar – Colombia}
+  {+57 317 819 5354}
+  {iscuande\_1982@hotmail.com}
+  {linkedin.com/in/jacoga}
+
+%------ PERFIL PROFESIONAL ------
+\section{Perfil Profesional}
+
+Ingeniero de Sistemas con más de \textbf{10 años de experiencia} en administración y gestión de infraestructura tecnológica \emph{on-premise} en entidades del sector público, privado, salud y educación. Especializado en \textbf{administración de servidores Windows Server}, \textbf{redes LAN/WAN}, \textbf{Active Directory}, cableado estructurado y soporte técnico multinivel. Experiencia probada garantizando hasta \textbf{99,5\% de disponibilidad operativa} en entornos críticos. Formación complementaria en ciberseguridad, desarrollo web frontend e inteligencia artificial aplicada. Certificado por \textbf{Google} y \textbf{Cisco Networking Academy}. Disponibilidad inmediata, modalidad presencial/remota/híbrida, con movilidad nacional.
+
+%------ EXPERIENCIA PROFESIONAL ------
+\section{Experiencia Profesional}
+
+\cventry
+  {Ingeniero de Sistemas – Consultor TI}
+  {Ene 2024 – Presente}
+  {Construcciones \& Soluciones del Río S.A.S. / Tictelco S.A.S. / Clientes Privados}
+  {Aguachica, Cesar – Remota/Presencial}
+  {
+    \begin{itemize}
+      \item Consultoría integral de infraestructura IT para empresas del sector construcción, salud y PYME.
+      \item Administración de servidores locales, gestión de racks, switching y diagnóstico de conectividad WAN/LAN.
+      \item Mantenimiento preventivo y correctivo de equipos de cómputo e impresoras; instalación y configuración de equipos.
+      \item Revisión y certificación de red cableada estructurada; mantenimiento de cableado físico.
+      \item Implementación de soluciones tecnológicas para mejora de procesos operativos.
+      \item Desarrollo y mantenimiento web frontend: \keyword{HTML5, CSS3, JavaScript, WordPress}.
+      \item Capacitación técnica a usuarios finales y transferencia de conocimiento tecnológico.
+    \end{itemize}
+  }
+
+\cventry
+  {Ingeniero de Sistemas}
+  {Feb 2023 – Jul 2024}
+  {E.S.E. Hospital Olaya Herrera}
+  {Gamarra, Cesar – Presencial}
+  {
+    \begin{itemize}
+      \item Administración integral del sistema de información asistencial hospitalaria (SISPRO, MIPRES, RUAF, SIGIRES).
+      \item Gestión de \keyword{servidores Windows Server} y red LAN; \textbf{99,5\% de disponibilidad} en entorno crítico.
+      \item Soporte técnico especializado a más de \textbf{200 usuarios} con resolución eficiente de incidencias.
+      \item Mantenimiento de infraestructura de red LAN, equipos de cómputo, impresoras y activos TI.
+      \item Gestión del inventario y ciclo de vida de activos tecnológicos institucionales.
+    \end{itemize}
+  }
+
+\cventry
+  {Ingeniero de Sistemas}
+  {Feb 2022 – Jul 2022}
+  {Universidad Popular del César}
+  {Aguachica, Cesar – Presencial}
+  {
+    \begin{itemize}
+      \item Administración de infraestructura tecnológica educativa: servidores, redes LAN y equipos de cómputo.
+      \item Control y gestión de inventario TI; administración del ciclo de vida de activos tecnológicos.
+      \item Liderazgo en proyectos de incorporación de TIC en procesos académicos institucionales.
+      \item Capacitación docente y administrativa en herramientas digitales y plataformas educativas.
+    \end{itemize}
+  }
+
+\cventry
+  {Líder GELT – Gestión TIC Municipal}
+  {Jun 2015 – Feb 2016}
+  {Alcaldía Municipal de Gamarra}
+  {Gamarra, Cesar – Presencial}
+  {
+    \begin{itemize}
+      \item Liderazgo del área GELT (Gestión Electrónica) municipal; planeación y ejecución de proyectos TIC.
+      \item Administración de servidores locales y red LAN institucional; gestión de recursos e inventario TIC.
+      \item Articulación interinstitucional para implementación de soluciones de gobierno electrónico.
+    \end{itemize}
+  }
+
+\cventry
+  {Ingeniero de Sistemas}
+  {Mar 2016 – Mar 2017}
+  {Linktech de Colombia}
+  {Bogotá, D.C. – Presencial}
+  {
+    \begin{itemize}
+      \item Mantenimiento preventivo/correctivo de equipos; instalación y asesoría en hardware/software.
+      \item Administración de redes, cableado estructurado y certificación de infraestructura de red corporativa.
+    \end{itemize}
+  }
+
+\cventry
+  {Ingeniero de Sistemas}
+  {Ene 2017 – Dic 2017}
+  {Cordisco}
+  {Bogotá, D.C. – Presencial}
+  {
+    \begin{itemize}
+      \item Administración de red corporativa y soporte técnico interno; implementación de mejoras tecnológicas.
+    \end{itemize}
+  }
+
+%------ FORMACIÓN ACADÉMICA ------
+\section{Formación Académica}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+  {\bfseries\color{primary} Ingeniería de Sistemas} & {\small\color{medgray} 2015 – 2023} \\
+  {\small\color{darkgray} Universidad Popular del César – Aguachica, Cesar} & \\[6pt]
+  {\bfseries\color{primary} Especialización en TIC para Diseño de Estrategias Didácticas} & {\small\color{medgray} 2022 – 2023} \\
+  {\small\color{darkgray} Universidad Popular del César – En proceso de grado} & \\
+\end{tabularx}
+
+%------ CERTIFICACIONES ------
+\section{Certificaciones Relevantes}
+
+\begin{multicols}{2}
+\begin{itemize}
+  \item \textbf{Google IT Support Professional} (2025)
+  \item \textbf{Google Data Analytics} (2025)
+  \item \textbf{Google Cybersecurity} – En curso (2025)
+  \item \textbf{Cisco: IT Customer Support Basics} (2025)
+  \item \textbf{Cisco: Introduction to IoT} (2025)
+  \item \textbf{Cisco: Introduction to Cybersecurity} (2025)
+  \item \textbf{Fundamentos de IA – Google} (2024)
+  \item \textbf{IA Generativa – Microsoft} (2024)
+  \item \textbf{HTML5/CSS3, JS ES6+, React.js} – LinkedIn Learning (2024)
+  \item \textbf{Inglés Técnico Niveles 1–3} – SENA (2021)
+\end{itemize}
+\end{multicols}
+
+%------ HABILIDADES TÉCNICAS ------
+\section{Habilidades Técnicas}
+
+\vspace{4pt}
+\noindent
+\tag{Windows Server} \tag{Active Directory} \tag{Linux} \tag{TCP/IP} \tag{LAN/WAN} \tag{Switching} \tag{Routing} \tag{Cableado Estructurado} \tag{Rack Management} \tag{ITIL} \tag{Help Desk} \tag{TeamViewer} \tag{AnyDesk} \tag{HTML5} \tag{CSS3} \tag{JavaScript} \tag{WordPress} \tag{React.js} \tag{Git} \tag{MS Office} \tag{Google Workspace} \tag{Ciberseguridad} \tag{Virtualización}
+
+\vspace{6pt}
+
+\noindent\textbf{\color{primary}Gestión:} Administración de proyectos IT $\cdot$ Control de inventario tecnológico $\cdot$ Documentación técnica $\cdot$ Gestión de activos TI $\cdot$ Continuidad operativa
+
+%------ IDIOMAS ------
+\section{Idiomas}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+  \textbf{Español:} & Nativo \\
+  \textbf{Inglés:} & Básico–Técnico (A2) – Lectura de documentación técnica en inglés \\
+\end{tabularx}
+
+%------ PIE ------
+\vspace{8pt}
+\begin{center}
+\textcolor{medgray}{\small \faCheckCircle[regular]~Disponibilidad inmediata \quad \faCheckCircle[regular]~Presencial / Remota / Híbrida \quad \faCheckCircle[regular]~Movilidad nacional}
+\end{center}
+
+\end{document}

@@ -1,0 +1,295 @@
+%==============================================================
+% CV Jorge Armando Cordero García
+% VERSIÓN 3: Gestión TIC Pública / Sector Gobierno / Institucional
+% Optimizado para ATS | MiKTeX | VS Code
+% Compilar con: pdflatex CV_Jorge_Cordero_GestionPublica.tex
+%==============================================================
+
+\documentclass  [10pt, letterpaper]{article}
+
+%------ PAQUETES ------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage[left=1.8cm, right=1.8cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{mdframed}
+
+%------ COLORES ------
+\definecolor{primary}{HTML}{183153}
+\definecolor{accent}{HTML}{2C5F8A}
+\definecolor{gold}{HTML}{B8860B}
+\definecolor{lightblue}{HTML}{EBF3FA}
+\definecolor{lightgray}{HTML}{F5F5F5}
+\definecolor{darkgray}{HTML}{333333}
+\definecolor{medgray}{HTML}{555555}
+\definecolor{rulecol}{HTML}{2C5F8A}
+\definecolor{rulegold}{HTML}{B8860B}
+
+%------ HYPERLINKS ------
+\hypersetup{
+    colorlinks=true,
+    urlcolor=accent,
+    linkcolor=primary,
+    pdfauthor={Jorge Armando Cordero García},
+    pdftitle={CV - Gestión TIC Pública},
+    pdfsubject={Curriculum Vitae}
+}
+
+%------ FORMATO DE SECCIONES ------
+\titleformat{\section}
+  {\large\bfseries\color{primary}}
+  {}{0em}
+  {}
+  [{\color{rulegold}\rule[4pt]{\linewidth}{1pt}}\vspace{0pt}]
+
+\titlespacing{\section}{0pt}{10pt}{4pt}
+
+%------ COMANDOS PERSONALIZADOS ------
+\newcommand{\cvheader}[5]{%
+  \begin{center}
+    \textcolor{primary}{\rule{4cm}{0.8pt}} \quad
+    {\LARGE\bfseries\color{primary} #1}
+    \quad \textcolor{primary}{\rule{4cm}{0.8pt}}\\[5pt]
+    {\large\bfseries\color{accent} #2}\\[6pt]
+    {\small\color{darkgray}
+      \faMapMarker*~#3 \quad\textcolor{medgray}{$|$}\quad
+      \faPhone~#4 \quad\textcolor{medgray}{$|$}\quad
+      \faEnvelope~\href{mailto:#5}{#5}
+    }\\[2pt]
+    {\small\color{darkgray}
+      \faLinkedin~\href{https://linkedin.com/in/jacoga}{linkedin.com/in/jacoga}
+    }\\[4pt]
+    \textcolor{rulegold}{\rule{\linewidth}{1.2pt}}
+  \end{center}
+  \vspace{2pt}
+}
+
+\newcommand{\cventry}[5]{%
+  \noindent
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    {\bfseries\color{primary} #1} & \\
+    {\small\color{accent} #3} \textcolor{medgray}{$\cdot$} {\small\color{darkgray}\itshape #4} & {\footnotesize\color{gold}\bfseries #2} \\
+  \end{tabularx}
+  \vspace{2pt}
+  #5
+  \vspace{6pt}
+}
+
+\setlist[itemize]{
+  leftmargin=14pt,
+  itemsep=1.5pt,
+  parsep=0pt,
+  topsep=2pt,
+  label=\textcolor{accent}{\scriptsize\faChevronRight}
+}
+
+\newmdenv[
+  backgroundcolor=lightblue,
+  linecolor=accent,
+  leftline=true,
+  rightline=false,
+  topline=false,
+  bottomline=false,
+  linewidth=3pt,
+  innerleftmargin=8pt,
+  innerrightmargin=6pt,
+  innertopmargin=4pt,
+  innerbottommargin=4pt,
+  skipabove=0pt,
+  skipbelow=0pt
+]{highlight}
+
+\pagestyle{empty}
+
+%==============================================================
+\begin{document}
+%==============================================================
+
+% ENCABEZADO
+\cvheader
+  {Jorge Armando Cordero García}
+  {Ingeniero de Sistemas | Gestión TIC Institucional y Sector Público}
+  {Gamarra, Cesar – Colombia}
+  {+57 317 819 5354}
+  {iscuande\_1982@hotmail.com}
+
+%------ PERFIL PROFESIONAL ------
+\section{Perfil Profesional}
+
+\begin{highlight}
+Ingeniero de Sistemas con más de \textbf{10 años de experiencia} en gestión tecnológica integral en entidades del sector público, privado, salud y educación. Amplia trayectoria en \textbf{administración de infraestructura TIC}, soporte técnico multinivel, transformación digital institucional y liderazgo de proyectos tecnológicos. Experiencia directa en gobierno electrónico, sistemas de información institucional y contratación pública TI. Formación complementaria en \textbf{Gestión Pública, Liderazgo y Derechos Humanos} (ESAP). Certificado por \textbf{Google y Cisco}. Disponibilidad inmediata; movilidad a cualquier municipio o departamento.
+\end{highlight}
+
+%------ EXPERIENCIA PROFESIONAL ------
+\section{Experiencia Profesional}
+
+\cventry
+  {Ingeniero de Sistemas – Consultor TI}
+  {Ene 2024 – Presente}
+  {Construcciones \& Soluciones del Río S.A.S. / Tictelco S.A.S. / Clientes Privados}
+  {Aguachica, Cesar – Remota/Presencial}
+  {
+    \begin{itemize}
+      \item Consultoría tecnológica integral para empresas del sector construcción, salud y PYME.
+      \item Administración de servidores locales, racks de comunicaciones, switching y redes LAN/WAN.
+      \item Mantenimiento preventivo/correctivo de equipos de cómputo, impresoras y red cableada estructurada.
+      \item Instalación, configuración y gestión del ciclo de vida de activos tecnológicos.
+      \item Optimización de sistemas y transferencia de conocimiento tecnológico a equipos de trabajo.
+      \item Desarrollo y mantenimiento de plataformas web institucionales (WordPress, HTML5, CSS3).
+    \end{itemize}
+  }
+
+\cventry
+  {Ingeniero de Sistemas}
+  {Feb 2023 – Jul 2024}
+  {E.S.E. Hospital Olaya Herrera}
+  {Gamarra, Cesar – Presencial}
+  {
+    \begin{itemize}
+      \item Cargue, procesamiento y entrega de informes institucionales a plataformas del Ministerio de Salud: \textbf{SISPRO, MIPRES, RUAF, SIGIRES} y EPS.
+      \item Gestión integral de infraestructura tecnológica hospitalaria: servidores, redes, equipos e impresoras.
+      \item Garantía de \textbf{99,5\% de continuidad operativa} del servicio de salud para más de \textbf{200 usuarios}.
+      \item Soporte técnico especializado en entorno de misión crítica institucional.
+      \item Gestión del inventario y activos tecnológicos del hospital.
+    \end{itemize}
+  }
+
+\cventry
+  {Ingeniero de Soporte y Gestión TIC}
+  {Feb 2022 – Jul 2022}
+  {Universidad Popular del César}
+  {Aguachica, Cesar – Presencial}
+  {
+    \begin{itemize}
+      \item Administración de infraestructura tecnológica educativa: servidores, redes LAN y equipos de cómputo.
+      \item Liderazgo en proyectos de incorporación de TIC en procesos académicos y administrativos.
+      \item Gestión de inventario TI y activos tecnológicos institucionales.
+      \item Capacitación docente en herramientas digitales y plataformas educativas institucionales.
+    \end{itemize}
+  }
+
+\cventry
+  {Líder GELT – Gestión Electrónica y TIC Municipal}
+  {Jun 2015 – Feb 2016}
+  {Alcaldía Municipal de Gamarra}
+  {Gamarra, Cesar – Presencial}
+  {
+    \begin{itemize}
+      \item Liderazgo y dirección del área GELT (Gestión Electrónica); planeación y ejecución de proyectos TIC municipales.
+      \item Administración de servidores institucionales y red LAN de la alcaldía.
+      \item Gestión de recursos TIC, procesos de contratación pública tecnológica e inventario del área.
+      \item Articulación interinstitucional para implementación de soluciones de gobierno electrónico local.
+      \item Apoyo en procesos de transparencia y acceso a la información pública.
+    \end{itemize}
+  }
+
+\cventry
+  {Ingeniero de Sistemas}
+  {Ene 2017 – Dic 2017}
+  {Cordisco}
+  {Bogotá, D.C. – Presencial}
+  {
+    \begin{itemize}
+      \item Administración de red corporativa y soporte técnico; gestión de proyectos de fortalecimiento institucional.
+    \end{itemize}
+  }
+
+\cventry
+  {Ingeniero de Sistemas}
+  {Mar 2016 – Mar 2017}
+  {Linktech de Colombia}
+  {Bogotá, D.C. – Presencial}
+  {
+    \begin{itemize}
+      \item Mantenimiento preventivo/correctivo de equipos; certificación de infraestructura de red corporativa.
+    \end{itemize}
+  }
+
+%------ FORMACIÓN ACADÉMICA ------
+\section{Formación Académica}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+  {\bfseries\color{primary} Ingeniería de Sistemas} & {\small\color{medgray} 2015 – 2023} \\
+  {\small\color{darkgray} Universidad Popular del César – Aguachica, Cesar} & \\[5pt]
+  {\bfseries\color{primary} Especialización en TIC para Diseño de Estrategias Didácticas} & {\small\color{medgray} 2022 – 2023} \\
+  {\small\color{darkgray} Universidad Popular del César – En proceso de grado} & \\
+\end{tabularx}
+
+%------ CERTIFICACIONES ------
+\section{Certificaciones}
+
+\noindent\textbf{\color{primary}Gestión Pública y Liderazgo (ESAP)}
+
+\begin{itemize}
+  \item Derechos Humanos y Liderazgo en la Construcción de Paz – Escuela Superior de Administración Pública (ESAP)
+  \item Liderazgo Transformador y Resolución de Conflictos – ESAP
+  \item Sistema Político Electoral, Gestión Pública Territorial y ABC del Estado – ESAP (Yo Elijo SABER)
+  \item Control Social a la Gestión Pública – ESAP
+  \item Líderes para la Paz – Gobernación del Cesar / Fundación Uniendo Sueños
+  \item BSAFE – UNDSS (United Nations Department of Safety and Security)
+  \item Fundamentos del Sistema de Gestión de Seguridad y Salud en el Trabajo – SENA
+  \item Planificación de un Sistema de Gestión de Calidad NTC ISO 9001 – SENA
+  \item Auditoría Interna de Calidad NTC ISO 9001 – SENA
+\end{itemize}
+
+\vspace{4pt}
+\noindent\textbf{\color{primary}Tecnológicas}
+
+\begin{multicols}{2}
+\begin{itemize}
+  \item Google IT Support Professional (2025)
+  \item Google Data Analytics (2025)
+  \item Google Cybersecurity – En curso (2025)
+  \item Cisco: IT Customer Support Basics (2025)
+  \item Cisco: Introduction to IoT (2025)
+  \item Cisco: Introduction to Cybersecurity (2025)
+  \item Fundamentos de IA para Negocios – Google (2024)
+  \item Herramientas de IA Generativa – Microsoft (2024)
+  \item Inglés Técnico Niveles 1–3 – SENA (2021)
+\end{itemize}
+\end{multicols}
+
+%------ COMPETENCIAS TÉCNICAS ------
+\section{Competencias Técnicas}
+
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+  \textbf{\color{primary}Gestión TIC Pública:} & Gobierno electrónico, sistemas de información institucional, SUIT, SIGEP, contratación pública TI, planes tecnológicos. \\[4pt]
+  \textbf{\color{primary}Infraestructura IT:} & Redes LAN/WAN, Windows Server, Linux, Active Directory, virtualización, cableado estructurado, soporte multinivel. \\[4pt]
+  \textbf{\color{primary}Desarrollo Institucional:} & Transformación digital, capacitación tecnológica, gestión del cambio, proyectos TIC. \\[4pt]
+  \textbf{\color{primary}Herramientas:} & Microsoft Office Suite, Google Workspace, TeamViewer, AnyDesk, WordPress, HTML5/CSS3/JS. \\
+\end{tabularx}
+
+%------ COMPETENCIAS TRANSVERSALES ------
+\section{Competencias Transversales}
+
+{\small Liderazgo institucional $\cdot$ Comunicación asertiva $\cdot$ Pensamiento estratégico $\cdot$ Resolución de conflictos $\cdot$ Trabajo en equipo interdisciplinario $\cdot$ Adaptabilidad $\cdot$ Gestión bajo presión $\cdot$ Orientación al servicio ciudadano $\cdot$ Ética profesional $\cdot$ Transparencia institucional}
+
+%------ IDIOMAS ------
+\section{Idiomas}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+  \textbf{Español:} & Nativo \\
+  \textbf{Inglés:} & Básico–Técnico (A2) – Lectura y escritura de documentación técnica \\
+\end{tabularx}
+
+%------ PIE ------
+\vspace{8pt}
+\noindent\textcolor{rulegold}{\rule{\linewidth}{0.8pt}}
+\begin{center}
+\textcolor{medgray}{\small Disponibilidad inmediata $\cdot$ Presencial / Remota / Híbrida $\cdot$ Movilidad a cualquier municipio o departamento}
+\end{center}
+
+\end{document}

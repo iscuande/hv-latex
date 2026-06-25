@@ -1,0 +1,293 @@
+%==============================================================
+% CV Jorge Armando Cordero García
+% VERSIÓN 1: Especialista en Soporte TI / Help Desk / Service Desk
+% Optimizado para ATS | MiKTeX | VS Code
+% Compilar con: pdflatex CV_Jorge_Cordero_SoporteTI.tex
+%==============================================================
+
+\documentclass[10pt, letterpaper]{article}
+
+%------ PAQUETES ------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage[left=1.8cm, right=1.8cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage{lmodern}
+% \usepackage{microtype}  % removed because not installed in current TinyTeX environment
+\usepackage{parskip}
+\usepackage{enumitem}
+% \usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{amssymb}
+% \usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{pgffor}
+
+%------ COLORES ------
+\definecolor{primary}{HTML}{1A3A5C}
+\definecolor{accent}{HTML}{2E86AB}
+\definecolor{lightgray}{HTML}{F5F5F5}
+\definecolor{darkgray}{HTML}{444444}
+\definecolor{medgray}{HTML}{666666}
+\definecolor{rulecol}{HTML}{2E86AB}
+
+%------ HYPERLINKS ------
+\hypersetup{
+    colorlinks=true,
+    urlcolor=accent,
+    linkcolor=primary,
+    pdfauthor={Jorge Armando Cordero García},
+    pdftitle={CV - Especialista en Soporte TI},
+    pdfsubject={Curriculum Vitae}
+}
+
+%------ FORMATO DE SECCIONES ------
+% Se usa el formato de sección por defecto en este entorno.
+
+%------ COMANDOS PERSONALIZADOS ------
+\newcommand{\cvheader}[5]{%
+  \begin{center}
+    {\LARGE\bfseries\color{primary} #1}\\[4pt]
+    {\large\color{accent} #2}\\[6pt]
+    {\small\color{darkgray}
+      Ubicación: #3 \quad
+      Tel: #4 \quad
+      Email: \href{mailto:#5}{#5}
+    }\\[2pt]
+    {\small\color{darkgray}
+      LinkedIn: \href{https://linkedin.com/in/jacoga}{linkedin.com/in/jacoga}
+    }
+  \end{center}
+  \vspace{2pt}
+  \textcolor{rulecol}{\rule{\linewidth}{2pt}}
+  \vspace{4pt}
+}
+
+\newcommand{\cventry}[5]{%
+  \noindent
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    {\bfseries\color{primary} #1} & {\small\color{medgray} #2} \\
+    {\small\color{accent} #3} $\cdot$ {\small\color{darkgray}\itshape #4} & \\
+  \end{tabularx}
+  \vspace{2pt}
+  #5
+  \vspace{6pt}
+}
+
+\newcommand{\cvitem}{\item[\textcolor{accent}{\small$\blacktriangleright$}]}
+
+\setlist[itemize]{
+  leftmargin=14pt,
+  itemsep=1pt,
+  parsep=0pt,
+  topsep=2pt,
+  label=\textcolor{accent}{\small$\blacktriangleright$}
+}
+
+%------ SKILL BAR ------
+\newcommand{\skillbar}[2]{%
+  \noindent
+  \begin{tikzpicture}[baseline]
+    \fill[lightgray] (0,0) rectangle (4cm, 0.18cm);
+    \fill[accent] (0,0) rectangle (#2*0.04cm, 0.18cm);
+  \end{tikzpicture}
+  \hspace{4pt}{\small #1}\\[3pt]
+}
+
+\pagestyle{empty}
+
+%==============================================================
+\begin{document}
+%==============================================================
+
+% ENCABEZADO
+\cvheader
+  {Jorge Armando Cordero García}
+  {Ingeniero de Sistemas | Especialista en Soporte TI \& Service Desk}
+  {Gamarra, Cesar – Colombia}
+  {+57 317 819 5354}
+  {iscuande\_1982@hotmail.com}
+
+%------ PERFIL PROFESIONAL ------
+\section{Perfil Profesional}
+
+Ingeniero de Sistemas con más de \textbf{10 años de experiencia} en soporte técnico multinivel (Nivel 1, Nivel 2, Help Desk y Service Desk), gestión de infraestructura IT y administración de redes LAN/WAN en sectores de salud, educación y gobierno. Sólidas competencias en resolución de incidencias bajo metodología \textbf{ITIL}, administración de \textbf{Windows Server}, \textbf{Active Directory} y herramientas de soporte remoto (TeamViewer, AnyDesk). Certificado por \textbf{Google} en IT Support y Ciberseguridad. Disponibilidad inmediata para modalidad presencial, remota o híbrida.
+
+%------ EXPERIENCIA PROFESIONAL ------
+\section{Experiencia Profesional}
+
+\cventry
+  {Ingeniero de Sistemas – Consultor TI}
+  {Ene 2024 – Presente}
+  {Construcciones \& Soluciones del Río S.A.S. / Tictelco S.A.S. / Clientes Privados}
+  {Aguachica, Cesar – Híbrida}
+  {
+    \begin{itemize}
+      \item Soporte técnico Nivel 1 y Nivel 2 a usuarios finales en entornos Windows 10/11 y servidores locales.
+      \item Administración y monitoreo de servidores, garantizando disponibilidad continua del servicio.
+      \item Instalación, configuración y mantenimiento preventivo/correctivo de equipos de cómputo e impresoras.
+      \item Diagnóstico y resolución de incidencias de conectividad en redes cableadas estructuradas (LAN).
+      \item Gestión de racks de comunicaciones, switching y revisión de cableado estructurado.
+      \item Soporte en plataformas WordPress, HTML/CSS y optimización de sistemas operativos.
+      \item Capacitación técnica a usuarios sobre herramientas ofimáticas y buenas prácticas de seguridad.
+    \end{itemize}
+  }
+
+\cventry
+  {Ingeniero de Sistemas}
+  {Feb 2023 – Jul 2024}
+  {E.S.E. Hospital Olaya Herrera}
+  {Gamarra, Cesar – Presencial}
+  {
+    \begin{itemize}
+      \item Soporte TI multinivel a más de \textbf{200 usuarios} en entorno hospitalario de misión crítica.
+      \item Administración de \textbf{Windows Server} y redes LAN; logro de \textbf{99,5\% de continuidad operativa}.
+      \item Gestión y procesamiento de informes institucionales en plataformas SISPRO, MIPRES, RUAF y SIGIRES.
+      \item Mantenimiento de servidores locales, equipos de cómputo, impresoras y activos tecnológicos.
+      \item Configuración y administración de infraestructura de red LAN hospitalaria.
+    \end{itemize}
+  }
+
+\cventry
+  {Ingeniero de Sistemas}
+  {Feb 2022 – Jul 2022}
+  {Universidad Popular del César}
+  {Aguachica, Cesar – Presencial}
+  {
+    \begin{itemize}
+      \item Administración de infraestructura tecnológica institucional: servidores, redes y equipos de cómputo.
+      \item Control de inventario TI y gestión de activos tecnológicos.
+      \item Soporte técnico a usuarios y administración de sistemas académicos institucionales.
+    \end{itemize}
+  }
+
+\cventry
+  {Lider GELT – Gestión TIC}
+  {Jun 2015 – Feb 2016}
+  {Alcaldía Municipal de Gamarra}
+  {Gamarra, Cesar – Presencial}
+  {
+    \begin{itemize}
+      \item Liderazgo del área GELT (Gestión Electrónica) municipal; administración de servidores y red LAN.
+      \item Gestión de recursos TIC e inventario del área tecnológica municipal.
+    \end{itemize}
+  }
+
+\cventry
+  {Ingeniero de Sistemas}
+  {Mar 2016 – Mar 2017}
+  {Linktech de Colombia}
+  {Bogotá, D.C. – Presencial}
+  {
+    \begin{itemize}
+      \item Mantenimiento preventivo y correctivo de equipos de cómputo; instalación de hardware/software.
+      \item Administración de redes, cableado estructurado y certificación de infraestructura de red.
+    \end{itemize}
+  }
+
+\cventry
+  {Ingeniero de Sistemas}
+  {Ene 2017 – Dic 2017}
+  {Cordisco}
+  {Bogotá, D.C. – Presencial}
+  {
+    \begin{itemize}
+      \item Administración de red corporativa y soporte técnico interno a usuarios.
+      \item Implementación de mejoras tecnológicas y gestión del Drive institucional.
+    \end{itemize}
+  }
+
+%------ FORMACIÓN ACADÉMICA ------
+\section{Formación Académica}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+  {\bfseries\color{primary} Ingeniería de Sistemas} & {\small\color{medgray} 2015 – 2023} \\
+  {\small\color{darkgray} Universidad Popular del César – Aguachica, Cesar} & \\
+\end{tabularx}
+
+\vspace{4pt}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+  {\bfseries\color{primary} Especialización en TIC para Diseño de Estrategias Didácticas} & {\small\color{medgray} 2022 – 2023} \\
+  {\small\color{darkgray} Universidad Popular del César – En proceso de grado} & \\
+\end{tabularx}
+
+%------ CERTIFICACIONES ------
+\section{Certificaciones}
+
+\begin{itemize}
+  \item \textbf{Google IT Support Professional Certificate} – Google / Coursera (2025)
+  \item \textbf{Google Data Analytics Professional Certificate} – Google / Coursera (2025)
+  \item \textbf{Google Cybersecurity Professional Certificate} – Google / Coursera (En curso 2025)
+  \item \textbf{IT Customer Support Basics} – Cisco Networking Academy (2025)
+  \item \textbf{Introduction to IoT} – Cisco Networking Academy (2025)
+  \item \textbf{Introduction to Cybersecurity} – Cisco Networking Academy (2025)
+  \item \textbf{Fundamentos de IA para Negocios} – Google (2024)
+  \item \textbf{Herramientas de IA Generativa} – Microsoft (2024)
+  \item \textbf{HTML5/CSS3 Avanzado, JavaScript ES6+, React.js} – LinkedIn Learning (2024)
+  \item \textbf{Inglés Técnico Niveles 1–3} – SENA Virtual (2021)
+\end{itemize}
+
+%------ HABILIDADES TÉCNICAS ------
+\section{Habilidades Técnicas}
+
+\begin{multicols}{2}
+\noindent\textbf{\color{primary}Soporte \& Help Desk}\\
+{\small Soporte Nivel 1/2, ITIL, Help Desk, Service Desk,\\
+TeamViewer, AnyDesk, Diagnóstico de Incidencias}
+
+\vspace{6pt}
+\noindent\textbf{\color{primary}Sistemas Operativos}\\
+{\small Windows 10/11, Windows Server 2016/2019,\\
+Linux (fundamentos), Active Directory}
+
+\vspace{6pt}
+\noindent\textbf{\color{primary}Redes \& Conectividad}\\
+{\small LAN/WAN, TCP/IP, Switching, Routing,\\
+Cableado Estructurado, Rack Management}
+
+\columnbreak
+
+\noindent\textbf{\color{primary}Hardware \& Mantenimiento}\\
+{\small Mantenimiento preventivo/correctivo PC,\\
+Impresoras, Periféricos, Ensamblaje}
+
+\vspace{6pt}
+\noindent\textbf{\color{primary}Seguridad Informática}\\
+{\small Hardening básico, Security Awareness,\\
+Fundamentos de Ciberseguridad}
+
+\vspace{6pt}
+\noindent\textbf{\color{primary}Herramientas Ofimáticas}\\
+{\small Microsoft Office Suite (Excel, Word, PowerPoint),\\
+Google Workspace, WordPress}
+\end{multicols}
+
+%------ COMPETENCIAS BLANDAS ------
+\section{Competencias Transversales}
+
+{\small Resolución de problemas complejos $\cdot$ Comunicación asertiva con usuarios $\cdot$ Orientación al cliente $\cdot$ Pensamiento analítico $\cdot$ Trabajo bajo presión $\cdot$ Atención al detalle $\cdot$ Adaptabilidad $\cdot$ Trabajo en equipo $\cdot$ Gestión del tiempo}
+
+%------ IDIOMAS ------
+\section{Idiomas}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+  \textbf{Español:} & Nativo \\
+  \textbf{Inglés:} & Básico–Técnico (A2) – Lectura y escritura de documentación técnica \\
+\end{tabularx}
+
+%------ PIE ------
+\vspace{8pt}
+\begin{center}
+\textcolor{medgray}{\small Disponibilidad inmediata $\cdot$ Modalidad presencial, remota o híbrida $\cdot$ Movilidad nacional}
+\end{center}
+
+\end{document}
